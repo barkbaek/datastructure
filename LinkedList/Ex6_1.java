@@ -3,11 +3,22 @@ import java.util.*;
 public class Ex6_1{
 	public static void main(String args[]){
 		// 링크드 리스트 인스턴스를 생성한다.
+
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
 		LinkedList L = new LinkedList();
-		System.out.println("(1) Insert 3 nodes");
+		System.out.println("(1) Insert " + n + " nodes");
+		for (int i = 0 ; i < n; i++ ) {
+			String str = sc.next();
+			System.out.println("Current Input : " + str);
+			L.insertLastNode(str);
+		}
+		/*
 		L.insertLastNode("Mon");
 		L.insertLastNode("Wed");
 		L.insertLastNode("Sun");
+		*/
 		L.printList();
 
 		System.out.println("(2) Insert Wed node after Fri node");
