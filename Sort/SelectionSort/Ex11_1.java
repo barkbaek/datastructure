@@ -1,4 +1,5 @@
 import java.util.*; 
+// 선택 정렬
 
 class Sort{
 	public void selectionSort(int a[]){		
