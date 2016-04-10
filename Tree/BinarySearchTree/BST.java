@@ -63,7 +63,9 @@ class BinarySearchTree {
 class BST {
 	public static void main (String[] args) {
 		BinarySearchTree bst = new BinarySearchTree();
-
+		bst.printBST();
+		System.out.println("\n\n");
+		
 		bst.insertBST('G');
 		bst.insertBST('I');
 		bst.insertBST('H');
